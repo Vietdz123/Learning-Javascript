@@ -120,3 +120,30 @@ Với ID là duy nhất thì class ngược lại, nghĩa là bạn có thể ch
 ```
 
 Giả sử ta có 2 class đính cho thẻ `div` và `p`, nhưng ta chỉ muốn thẻ `div` được gắn style. Thì ta chỉ cần thêm tên thẻ `div` đằng trước dấu `.` là được.
+
+```css
+div.classViet {
+    background-color: red;
+    color: aqua;
+}
+```
+
+## 3.4 Chú ý trong CSS Selector
+
+- Với ID thì trong mỗi trang web nó là duy nhất nên thông thường chúng ta hay dùng nó ở những vị trí không có tính chất lặp đi lặp lại nhiều lần
+- Với Class thì ta có thể đặt nhiều vị trí, chính vì vậy nếu website bạn có nhiều block giống nhau thì hãy chọn class
+- Thứ hai ta phải hiểu dù `ID` hay `class` thì đều tuân theo quy luật phâp cấp, nghĩa là khi truy vấn `selector` thì sẽ ghi cấp cha rồi tới cấp con.
+ 
+Ví dụ giờ viết CSS cho thẻ h2 có `class="title"` nằm trong thẻ  div có `id="main"`.
+```csss
+div#mian h2.title{
+
+}
+```
+
+- Thứ ba hiểu được sự khác nhau giữa ghi liền và ghi có khoảng trắng giữa id hoặc class và tên thẻ.
+
+```css
+div#main: chọn thẻ div có id="main" 
+div #main: Chọn thẻ có id="main" nằm trong thẻ div
+```
