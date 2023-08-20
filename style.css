@@ -1,0 +1,22 @@
+p {
+    background-color: aqua
+}
+
+div p {
+    color: red;
+    background-color: blue;
+}
+
+#siuNhan {
+    color: burlywood;
+}
+
+div#QuanQue {
+    background-color:teal;
+}
+
+.classViet {
+    background-color: black;
+    color:blueviolet;
+}
+
